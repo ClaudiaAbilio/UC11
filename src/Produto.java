@@ -1,11 +1,15 @@
+/*
+ Claudia Abilio - PI - UC 15 - 2025
+ */
+
 public class Produto implements ProdutoInterface {
-    private int id;  // Changed access modifier to private
+    private int id;  
     private String nome;
     private String descricao;
     private double preco;
 
     public Produto(int id, String nome, String descricao, double preco) {
-        this.id = id;  // Inicializando o campo id
+        this.id = id;  
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
@@ -17,7 +21,7 @@ public class Produto implements ProdutoInterface {
     }
 
     @Override
-    public void setId(int id) {  // Implemented setId method
+    public void setId(int id) {  
         this.id = id;
     }
 

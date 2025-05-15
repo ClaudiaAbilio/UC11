@@ -1,7 +1,6 @@
 /*
- Claudia Abilio - PI - Fev 2025
+ Claudia Abilio - PI - UC 15 - 2025
  */
-
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,14 +19,13 @@ public class Pedido {
         this.clienteId = clienteId;
         this.total = total;
         this.detalhes = new ArrayList<>();
-        calcularTotal(); // Certifique-se de calcular o total ao criar o pedido
+        calcularTotal(); 
     }
 
     public Pedido(LocalDate dataVenda) {
-        this(0, dataVenda, 0, 0.0); // Call the main constructor with default values
+        this(0, dataVenda, 0, 0.0); 
     }
-
-    // Getters e Setters
+    
     public int getId() {
         return id;
     }
@@ -74,7 +72,7 @@ public class Pedido {
         calcularTotal();
     }
 
-    public void calcularTotal() {  // Alterado para public
+    public void calcularTotal() { 
         total = detalhes.stream()
                         .mapToDouble(d -> d.getQuantidade() * d.getPrecoUnitario())
                         .sum();

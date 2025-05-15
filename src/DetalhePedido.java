@@ -1,7 +1,6 @@
 /*
- Claudia Abilio - PI - Fev 2025
+ Claudia Abilio - PI - UC 15 - 2025
  */
-
 
 public class DetalhePedido {
 
@@ -16,9 +15,7 @@ public class DetalhePedido {
         this.quantidade = quantidade;
         this.precoUnitario = precoUnitario;
     }
-
-    // Getters e Setters
-
+    
     public int getVendaId() {
         return pedidoID;
     }

@@ -1,15 +1,15 @@
 /*
- Claudia Abilio - PI - Atividade 3 - jan 2025
+ Claudia Abilio - PI UC 15 - 2025
  */
 
 public class Pessoa {
-    private int id; // Campo id adicionado
+    private int id; 
     private String nome;
     private String endereco;
     private String telefone;
 
     public Pessoa(int id, String nome, String endereco, String telefone) {
-        this.id = id; // Inicializando o campo id
+        this.id = id; 
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
